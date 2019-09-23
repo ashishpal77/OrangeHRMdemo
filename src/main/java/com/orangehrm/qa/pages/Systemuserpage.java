@@ -1,5 +1,20 @@
 package com.orangehrm.qa.pages;
 
-public class Systemuserpage {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.orangehrm.qa.base.Testbase;
+
+public class Systemuserpage extends Testbase {
+	
+	//page factories
+	
+	@FindBy(xpath="//a[@class='toggle tiptip activated']")
+	
+	WebElement systemuserlabel;
+	
+	
+	
+	
 
 }

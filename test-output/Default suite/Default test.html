@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 19 17:38:23 IST 2019</td>
+<td>Started on:</td><td>Mon Sep 23 14:32:41 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24850 ms)</td>
+<tr><td>Total time:</td><td>231 seconds (231824 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,38 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.orangehrm.qa.testcases.Loginpagetest.gettittle()'><b>gettittle</b><br>Test class: com.orangehrm.qa.testcases.Loginpagetest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [test] but found [OrangeHRM]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.orangehrm.qa.testcases.Loginpagetest.gettittle(Loginpagetest.java:41)
+<td title='com.orangehrm.qa.testcases.Homepagetest.verifyjobtittlepage()'><b>verifyjobtittlepage</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ASHISH-PC&apos;, ip: &apos;192.168.43.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\Ashish\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62766}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 11d6ac9be8e1937552b26d1b6270d36d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.orangehrm.qa.pages.Homepage.clickonjobtittlelink(Homepage.java:144)
+	at com.orangehrm.qa.testcases.Homepagetest.verifyjobtittlepage(Homepagetest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,11 +132,38 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1551446957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1551446957'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [test] but found [OrangeHRM]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.orangehrm.qa.testcases.Loginpagetest.gettittle(Loginpagetest.java:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace62343880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace62343880'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ASHISH-PC&apos;, ip: &apos;192.168.43.147&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\Ashish\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62766}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 11d6ac9be8e1937552b26d1b6270d36d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.orangehrm.qa.pages.Homepage.clickonjobtittlelink(Homepage.java:144)
+	at com.orangehrm.qa.testcases.Homepagetest.verifyjobtittlepage(Homepagetest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -136,8 +190,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>0</td>
-<td>com.orangehrm.qa.testcases.Loginpagetest@3bfdc050</td></tr>
+<td>10</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -147,10 +201,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.orangehrm.qa.testcases.Loginpagetest.verifylogintest()'><b>verifylogintest</b><br>Test class: com.orangehrm.qa.testcases.Loginpagetest</td>
+<td title='com.orangehrm.qa.testcases.Homepagetest.veriftpaygradepage()'><b>veriftpaygradepage</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
 <td></td>
-<td>2</td>
-<td>com.orangehrm.qa.testcases.Loginpagetest@3bfdc050</td></tr>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.Homepagetest.verifyemployeestatuspage()'><b>verifyemployeestatuspage</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
+<td></td>
+<td>7</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.Homepagetest.verifygeneralinformationpage()'><b>verifygeneralinformationpage</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
+<td></td>
+<td>8</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.Homepagetest.verifyjobcategoriespage()'><b>verifyjobcategoriespage</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
+<td></td>
+<td>6</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.Homepagetest.verifylocationpage()'><b>verifylocationpage</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
+<td></td>
+<td>3</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.Homepagetest.verifyuserstest()'><b>verifyuserstest</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
+<td></td>
+<td>5</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
+<tr>
+<td title='com.orangehrm.qa.testcases.Homepagetest.verifyworkshiftspage()'><b>verifyworkshiftspage</b><br>Test class: com.orangehrm.qa.testcases.Homepagetest</td>
+<td></td>
+<td>7</td>
+<td>com.orangehrm.qa.testcases.Homepagetest@6f7fd0e6</td></tr>
 </table><p>
 </body>
 </html>

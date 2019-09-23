@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.orangehrm.qa.testcases.Loginpagetest">
+      <class name="com.orangehrm.qa.testcases.Homepagetest">
         <methods>
-          <include name="gettittle"/>
+          <include name="verifyjobtittlepage"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.orangehrm.qa.testcases.Loginpagetest -->
+      </class> <!-- com.orangehrm.qa.testcases.Homepagetest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
